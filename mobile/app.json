@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Harbor LifeLine",
+    "slug": "harbor-lifeline",
+    "scheme": "harborlifeline",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0B0F14",
+    "splash": {
+      "backgroundColor": "#0B0F14"
+    },
+    "plugins": ["expo-router", "expo-font", "expo-sqlite"],
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "Harbor LifeLine uses Bluetooth to connect to a nearby Hub for offline survival guidance when no internet is available.",
+        "NSBluetoothPeripheralUsageDescription": "Harbor LifeLine uses Bluetooth to connect to a nearby Hub for offline survival guidance when no internet is available."
+      }
+    },
+    "android": {
+      "permissions": [
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "BLUETOOTH_SCAN",
+        "BLUETOOTH_CONNECT",
+        "ACCESS_FINE_LOCATION"
+      ]
+    }
+  }
+}

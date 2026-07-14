@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+httpx
+pydantic
+
+# Optional — only needed for real RFCOMM Bluetooth on Linux.
+# The Hub and CLI client both work over --lan without this installed.
+# pybluez
+
+# Optional — only needed for the BLE GATT stretch-goal path (bleak).
+# bleak
